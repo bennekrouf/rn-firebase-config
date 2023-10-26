@@ -1,13 +1,13 @@
 # Description
 
-rn-firebase-config is a React Native module designed to extract Firebase configuration details from native files (google-services.json for Android and GoogleService-Info.plist for iOS) to be used in JavaScript code.
+__rn-firebase-config__ is a React Native module designed to extract Firebase configuration details from native files (google-services.json for Android and GoogleService-Info.plist for iOS) to be used in JavaScript code.
 How it Works
 
-## Behind the scenes, rn-firebase-config employs native modules in both Android and iOS:
+Behind the scenes, rn-firebase-config employs native modules in both Android and iOS:
 
-    - Android: Reads the google-services.json file from the assets folder, extracts the required Firebase configuration details, and returns them to the React Native JavaScript layer.
+- Android: Reads the google-services.json file from the assets folder, extracts the required Firebase configuration details, and returns them to the React Native JavaScript layer.
 
-    - iOS: Reads the GoogleService-Info.plist file, extracts the required Firebase configuration details, and returns them to the React Native JavaScript layer.
+- iOS: Reads the GoogleService-Info.plist file, extracts the required Firebase configuration details, and returns them to the React Native JavaScript layer.
 
 # How to Use
 
@@ -27,9 +27,9 @@ console.log(firebaseConfig);
 This function logs the extraction process and returns the extracted configuration. If the extraction is successful, you'll get an object with Firebase details; otherwise, a warning log indicates any issues.
 Points to Note
 
-    - The module handles errors gracefully and will provide clear logs in case of extraction failures.
+- The module handles errors gracefully and will provide clear logs in case of extraction failures.
 
-    - For security reasons, be cautious about logging the full Firebase config in a production environment as it may expose sensitive information.
+- For security reasons, be cautious about logging the full Firebase config in a production environment as it may expose sensitive information.
 
 ## Dependencies
 
