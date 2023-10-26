@@ -11,9 +11,9 @@ Behind the scenes, rn-firebase-config employs native modules in both Android and
 
 # How to Use
 
-    Ensure that you have the google-services.json file in the assets folder for Android and the GoogleService-Info.plist in the main bundle for iOS.
+Ensure that you have the google-services.json file in the assets folder for Android and the GoogleService-Info.plist in the main bundle for iOS.
 
-    Use the extractFirebaseConfig function in your React Native code as follows:
+Use the extractFirebaseConfig function in your React Native code as follows:
 
 ```javascript
 
@@ -33,31 +33,33 @@ Points to Note
 
 ## Dependencies
 
-    React Native
+React Native
 
 ## Installation
 
 For the module to work, you need to ensure that the native modules are correctly linked in your React Native project. Follow the standard React Native linking procedures for native modules if not using auto-linking.
 Contributing
 
-## We welcome contributions to rn-firebase-config! Here's how you can help:
+### We welcome contributions to rn-firebase-config!
 
-    - Fork the Repository: Click on the 'Fork' button at the top right corner of this page.
+Here's how you can help:
 
-    - Clone Your Forked Repository: git clone https://github.com/YOUR_USERNAME/rn-firebase-config.git
+- Fork the Repository: Click on the 'Fork' button at the top right corner of this page.
 
-    - Navigate to the cloned directory: cd rn-firebase-config
+- Clone Your Forked Repository: git clone https://github.com/YOUR_USERNAME/rn-firebase-config.git
 
-    - Create a New Branch: git checkout -b new-feature-or-bug-fix
+- Navigate to the cloned directory: cd rn-firebase-config
 
-    - Make Changes: Implement your new feature or fix a bug and commit the changes.
+- Create a New Branch: git checkout -b new-feature-or-bug-fix
 
-    - Push to GitHub: git push origin new-feature-or-bug-fix
+- Make Changes: Implement your new feature or fix a bug and commit the changes.
 
-    - Submit a Pull Request: Go to the rn-firebase-config GitHub page and click on the 'New Pull Request' button. Select your branch from the dropdown and submit your pull request.
+- Push to GitHub: git push origin new-feature-or-bug-fix
 
-    - Wait for the Review: Maintainers will review your pull request, suggest changes if necessary, and merge it once it's approved.
+- Submit a Pull Request: Go to the rn-firebase-config GitHub page and click on the 'New Pull Request' button. Select your branch from the dropdown and submit your pull request.
 
-## License
+- Wait for the Review: Maintainers will review your pull request, suggest changes if necessary, and merge it once it's approved.
+
+### License
 
 rn-firebase-config is licensed under the MIT License. Refer to the LICENSE file in the repository for more details.
