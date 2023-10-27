@@ -3,7 +3,7 @@
 __rn-firebase-config__ is a React Native module designed to extract Firebase configuration details from native files (google-services.json for Android and GoogleService-Info.plist for iOS) to be used in JavaScript code.
 How it Works
 
-Behind the scenes, rn-firebase-config employs native modules in both Android and iOS:
+Behind the scenes, mayo-firebase-config employs native modules in both Android and iOS:
 
 - Android: Reads the google-services.json file from the assets folder, extracts the required Firebase configuration details, and returns them to the React Native JavaScript layer.
 
@@ -17,7 +17,7 @@ Use the extractFirebaseConfig function in your React Native code as follows:
 
 ```javascript
 
-import { extractFirebaseConfig } from 'rn-firebase-config';
+import { extractFirebaseConfig } from 'mayo-firebase-config';
 
 const firebaseConfig = extractFirebaseConfig();
 console.log(firebaseConfig);
@@ -40,15 +40,15 @@ React Native
 For the module to work, you need to ensure that the native modules are correctly linked in your React Native project. Follow the standard React Native linking procedures for native modules if not using auto-linking.
 Contributing
 
-### We welcome contributions to rn-firebase-config!
+### We welcome contributions to mayo-firebase-config!
 
 Here's how you can help:
 
 - Fork the Repository: Click on the 'Fork' button at the top right corner of this page.
 
-- Clone Your Forked Repository: git clone https://github.com/YOUR_USERNAME/rn-firebase-config.git
+- Clone Your Forked Repository: git clone https://github.com/YOUR_USERNAME/mayo-firebase-config.git
 
-- Navigate to the cloned directory: cd rn-firebase-config
+- Navigate to the cloned directory: cd mayo-firebase-config
 
 - Create a New Branch: git checkout -b new-feature-or-bug-fix
 
@@ -56,10 +56,10 @@ Here's how you can help:
 
 - Push to GitHub: git push origin new-feature-or-bug-fix
 
-- Submit a Pull Request: Go to the rn-firebase-config GitHub page and click on the 'New Pull Request' button. Select your branch from the dropdown and submit your pull request.
+- Submit a Pull Request: Go to the mayo-firebase-config GitHub page and click on the 'New Pull Request' button. Select your branch from the dropdown and submit your pull request.
 
 - Wait for the Review: Maintainers will review your pull request, suggest changes if necessary, and merge it once it's approved.
 
 ### License
 
-rn-firebase-config is licensed under the MIT License. Refer to the LICENSE file in the repository for more details.
+mayo-firebase-config is licensed under the MIT License. Refer to the LICENSE file in the repository for more details.

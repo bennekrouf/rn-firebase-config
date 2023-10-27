@@ -1,4 +1,4 @@
-declare module 'rn-firebase-config/extractor' {
+declare module 'mayo-firebase-config/extractor' {
   export function extractFirebaseConfig(): {
     apiKey: string;
     authDomain: string;
