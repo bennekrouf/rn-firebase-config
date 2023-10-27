@@ -1,9 +1,10 @@
 {
   "name": "rn-firebase-config",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "author": "Mohamed Bennekrouf",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",  
   "scripts": {
     "semantic-release": "semantic-release"
   },
