@@ -1,10 +1,10 @@
 {
   "name": "mayo-firebase-config",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "license": "MIT",
   "author": "Mohamed Bennekrouf",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "index.d.ts",
   "scripts": {
     "semantic-release": "semantic-release"
   },
