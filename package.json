@@ -1,7 +1,6 @@
 {
   "name": "rn-firebase-config",
-  "version": "1.0.3",
-  "main": "dist/index.js",
+  "version": "1.0.4",
   "license": "MIT",
   "author": "Mohamed Bennekrouf",
   "types": "index.d.ts",
