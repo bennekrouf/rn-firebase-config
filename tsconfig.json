@@ -13,8 +13,8 @@
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
   "include": [
-    "src/**/*.ts"  // source files to include in the compilation
-, "src/index.ts", "index.d.ts"  ],
+    "src/**/*.ts", "src/index.ts", "index.d.ts"
+  ],
   "exclude": [
     "node_modules"  // dependencies to exclude from compilation
   ]
