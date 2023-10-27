@@ -1,6 +1,6 @@
 {
   "name": "mayo-firebase-config",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "license": "MIT",
   "author": "Mohamed Bennekrouf",
   "main": "dist/index.js",
@@ -14,7 +14,7 @@
     }
   },
   "dependencies": {
-    "mayo-logger": "^1.0.7"
+    "mayo-logger": "^1.0.8"
   },
   "devDependencies": {
     "@types/react": "^18.2.21",
