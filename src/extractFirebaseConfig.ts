@@ -2,17 +2,17 @@ import { NativeModules } from 'react-native';
 import { Logger } from 'mayo-logger';
 
 interface FirebaseConfig {
-    apiKey?: string;
-    authDomain?: string;
-    projectId?: string;
-    storageBucket?: string;
-    messagingSenderId?: string;
-    appId?: string;
-    measurementId?: string;
-    databaseURL?: string;
-    webClientId?: string; // Add this line
-    [key: string]: string | undefined; // To cater for any other properties that might be added
-}  
+  apiKey: string;
+  authDomain: string;
+  projectId: string;
+  storageBucket: string;
+  messagingSenderId: string;
+  appId: string;
+  measurementId?: string;
+  databaseURL?: string;
+  webClientId?: string;
+  [key: string]: string | undefined;
+} 
 
 const { FirebaseConfigExtractor } = NativeModules;
 
