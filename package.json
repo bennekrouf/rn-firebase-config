@@ -1,6 +1,6 @@
 {
   "name": "mayo-firebase-config",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "license": "MIT",
   "author": "Mohamed Bennekrouf",
   "main": "dist/index.js",
@@ -24,11 +24,11 @@
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
-    "react-native": "^0.59.0 || ^1000.0.0",
+    "react-native": ">=0.59.0",
     "react-native-device-info": "^10.11.0"
   },
   "resolutions": {
-    "react": "16.14.0"
+    "react": "18.2.0"
   },
   "repository": {
     "type": "git",

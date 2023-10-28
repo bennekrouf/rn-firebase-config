@@ -4,4 +4,12 @@
 
 RCT_EXTERN_METHOD(extractConfig: (RCTPromiseResolveBlock)resolver rejecter:(RCTPromiseRejectBlock)rejecter)
 
++ (BOOL)requiresMainQueueSetup
+{
+    return NO;
+}
+
 @end
+
+
+
