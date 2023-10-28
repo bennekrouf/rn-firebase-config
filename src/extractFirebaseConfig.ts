@@ -1,22 +1,10 @@
 import { NativeModules } from 'react-native';
 import { Logger } from 'mayo-logger';
-
-interface FirebaseConfig {
-  apiKey: string;
-  authDomain: string;
-  projectId: string;
-  storageBucket: string;
-  messagingSenderId: string;
-  appId: string;
-  measurementId?: string;
-  databaseURL?: string;
-  webClientId?: string;
-  [key: string]: string | undefined;
-} 
+import { FirebaseConfig } from 'mayo-firebase-config'; // import the type from the module
 
 const { FirebaseConfigExtractor } = NativeModules;
 
-export const extractFirebaseConfig = (): FirebaseConfig => {
+export const extractFirebaseConfig = async (): Promise<FirebaseConfig> => {
   Logger.info('Starting Firebase config extraction...', null, { tag: 'mayo-firebase-config-extractor' });
 
   const config: FirebaseConfig = FirebaseConfigExtractor.extractConfig();
