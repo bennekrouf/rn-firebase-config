@@ -7,7 +7,7 @@ const { FirebaseConfigExtractor } = NativeModules;
 export const extractFirebaseConfig = async (): Promise<FirebaseConfig> => {
   Logger.info('Starting Firebase config extraction...', null, { tag: 'mayo-firebase-config-extractor' });
 
-  const config: FirebaseConfig = FirebaseConfigExtractor.extractConfig();
+  const config: FirebaseConfig = await FirebaseConfigExtractor.extractConfig();
 
   if (config && typeof config === 'object' && Object.keys(config).length > 0) {
     Logger.info('Successfully extracted Firebase config', null, { tag: 'mayo-firebase-config-extractor' });
