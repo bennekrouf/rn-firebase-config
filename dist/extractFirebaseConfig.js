@@ -15,7 +15,7 @@ const mayo_logger_1 = require("mayo-logger");
 const { FirebaseConfigExtractor } = react_native_1.NativeModules;
 const extractFirebaseConfig = () => __awaiter(void 0, void 0, void 0, function* () {
     mayo_logger_1.Logger.info('Starting Firebase config extraction...', null, { tag: 'mayo-firebase-config-extractor' });
-    const config = FirebaseConfigExtractor.extractConfig();
+    const config = yield FirebaseConfigExtractor.extractConfig();
     if (config && typeof config === 'object' && Object.keys(config).length > 0) {
         mayo_logger_1.Logger.info('Successfully extracted Firebase config', null, { tag: 'mayo-firebase-config-extractor' });
     }
