@@ -3,8 +3,7 @@ module.exports = {
       platforms: {
         android: {
           sourceDir: './android',
-          packageImportPath: 'import com.mayorana.mayofirebaseconfig.FirebaseConfigExtractorModule;',
-          packageInstance: 'new FirebaseConfigExtractorModule(reactContext)',
+          packageInstance: 'new FirebaseConfigExtractorModule(reactContext)'
         },
       },
     },

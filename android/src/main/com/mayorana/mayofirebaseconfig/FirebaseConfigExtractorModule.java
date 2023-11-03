@@ -4,6 +4,7 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Promise;
+import com.facebook.react.module.annotations.ReactModule;
 
 import android.content.res.AssetManager;
 import org.json.JSONArray;
@@ -16,7 +17,9 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
+@ReactModule(name = FirebaseConfigExtractorModule.NAME)
 public class FirebaseConfigExtractorModule extends ReactContextBaseJavaModule {
+    public static final String NAME = "FirebaseConfigExtractor";
 
     public FirebaseConfigExtractorModule(ReactApplicationContext reactContext) {
         super(reactContext);
@@ -24,7 +27,7 @@ public class FirebaseConfigExtractorModule extends ReactContextBaseJavaModule {
 
     @Override
     public String getName() {
-        return "FirebaseConfigExtractor";
+        return NAME;
     }
 
     @ReactMethod
