@@ -1,11 +1,11 @@
 import { NativeModules } from 'react-native';
 import { Logger } from 'mayo-logger';
-import { FirebaseConfig } from 'mayo-firebase-config'; // import the type from the module
+import { FirebaseConfig } from 'mayo-firebase-config';
 
 const { FirebaseConfigExtractor } = NativeModules;
 
 export const extractFirebaseConfig = async (): Promise<FirebaseConfig> => {
-  Logger.info('Starting Firebase config extraction...', null, { tag: 'mayo-firebase-config-extractor' });
+  Logger.info('TOTO Starting Firebase config extraction...', null, { tag: 'mayo-firebase-config-extractor' });
 
   const config: FirebaseConfig = await FirebaseConfigExtractor.extractConfig();
 
