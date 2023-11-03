@@ -1,15 +1,11 @@
 {
   "name": "mayo-firebase-config",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "license": "MIT",
   "author": "Mohamed Bennekrouf",
   "main": "dist/index.js",
   "types": "index.d.ts",
-  "react-native": {
-    "android": {
-      "sourceDir": "./android"
-    }
-  },
+  "react-native": "react-native.config.js",
   "scripts": {
     "semantic-release": "semantic-release"
   },
