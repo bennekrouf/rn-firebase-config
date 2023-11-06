@@ -1,4 +1,4 @@
-package com.mayorana.mayofirebaseconfig;
+package com.mayofirebaseconfig;
 
 import androidx.annotation.NonNull;
 

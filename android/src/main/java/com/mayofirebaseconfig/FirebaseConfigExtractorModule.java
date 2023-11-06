@@ -1,4 +1,4 @@
-package com.mayorana.mayofirebaseconfig;
+package com.mayofirebaseconfig;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
