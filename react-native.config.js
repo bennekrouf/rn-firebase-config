@@ -3,7 +3,7 @@ module.exports = {
       platforms: {
         android: {
           sourceDir: './android',
-          packageInstance: 'new FirebaseConfigExtractorModule(reactContext)'
+          // packageInstance: 'new FirebaseConfigExtractorModule(reactContext)'
         },
       },
     },
