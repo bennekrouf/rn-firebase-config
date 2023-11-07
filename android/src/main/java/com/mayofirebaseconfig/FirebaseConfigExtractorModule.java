@@ -1,5 +1,7 @@
 package com.mayofirebaseconfig;
 
+import android.util.Log;
+
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
@@ -36,9 +38,15 @@ public class FirebaseConfigExtractorModule extends ReactContextBaseJavaModule {
             // Use AssetManager to read the google-services.json file from the assets folder
             AssetManager assetManager = getReactApplicationContext().getAssets();
             InputStream input = assetManager.open("google-services.json");
-            
+
+            // Log file opened successfully
+            Log.d(NAME, "google-services.json file opened successfully.");
+
             // Convert InputStream to String
             String json = convertStreamToString(input);
+
+            // Log raw JSON string
+            Log.d(NAME, "JSON string: " + json);
 
             // Use JSONObject to parse the JSON string
             JSONObject jsonObject = new JSONObject(json);
@@ -47,6 +55,10 @@ public class FirebaseConfigExtractorModule extends ReactContextBaseJavaModule {
             JSONObject projectInfo = jsonObject.getJSONObject("project_info");
             JSONArray apiKeyArray = clientObject.getJSONArray("api_key");
             JSONObject apiKeyObject = apiKeyArray.getJSONObject(0);
+
+            // Log parsed objects
+            Log.d(NAME, "Parsed projectInfo: " + projectInfo.toString());
+            Log.d(NAME, "Parsed apiKeyObject: " + apiKeyObject.toString());
 
             // Extract webClientId
             JSONArray oauthClientArray = clientObject.getJSONArray("oauth_client");
@@ -72,7 +84,11 @@ public class FirebaseConfigExtractorModule extends ReactContextBaseJavaModule {
             config.put("databaseURL", "https://" + projectInfo.getString("project_id") + ".firebaseio.com");
             
             promise.resolve(config);
+        } catch (IOException e) {
+            Log.e(NAME, "Error reading Firebase config file", e);
+            promise.reject("ERR_IO_EXCEPTION", "Error reading Firebase config file", e);
         } catch (Exception e) {
+            Log.e(NAME, "Error extracting Firebase config on Android", e);
             promise.reject("ERR_UNEXPECTED_EXCEPTION", "Error extracting Firebase config on Android", e);
         }
     }
