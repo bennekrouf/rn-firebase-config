@@ -33,7 +33,7 @@ public class FirebaseConfigExtractorModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void extractConfig(Promise promise) {
+    public void extractFirebaseConfig(Promise promise) {
         Log.d(NAME, "Starting to extract Firebase config.");
         try {
             // Use AssetManager to read the google-services.json file from the assets folder

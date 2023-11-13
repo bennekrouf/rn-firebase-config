@@ -17,7 +17,7 @@ export const extractFirebaseConfig = async (): Promise<FirebaseConfig> => {
     }
 
     // Be cautious about logging potentially sensitive information
-    Logger.error('Extracted Firebase config:', { config }, { tag: 'mayo-firebase-config-extractor' });
+    Logger.info('Extracted Firebase config:', { config }, { tag: 'mayo-firebase-config-extractor' });
 
     return config;
   } catch (error) {
