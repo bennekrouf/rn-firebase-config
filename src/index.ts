@@ -1,1 +1,1 @@
-export { extractFirebaseConfig } from './extractFirebaseConfig';
+export { extractConfig } from './extractFirebaseConfig';

@@ -17,9 +17,9 @@ Use the extractFirebaseConfig function in your React Native code as follows:
 
 ```javascript
 
-import { extractFirebaseConfig } from 'mayo-firebase-config';
+import { extractConfig } from 'mayo-firebase-config';
 
-const firebaseConfig = await extractFirebaseConfig();
+const firebaseConfig = await extractConfig();
 console.log(firebaseConfig);
 
 ```
