@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "mayo-firebase-config"
-    s.version      = "1.1.1"
+    s.version      = "1.2.17 "
     s.summary      = "Firebase config auto extractor."
   
     s.description  = <<-DESC
