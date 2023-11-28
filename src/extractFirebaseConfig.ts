@@ -14,7 +14,8 @@ export const extractFirebaseConfig = async (): Promise<FirebaseConfig> => {
     if (config && typeof config === 'object' && Object.keys(config).length > 0) {
       Logger.info('Successfully extracted Firebase config', null, { tag: 'mayo-firebase-config-extractor' });
     } else {
-      Logger.warn('Failed to extract valid Firebase config or the config is empty', null, { tag: 'mayo-firebase-config-extractor' });
+      Logger.error('Failed to extract valid Firebase config or the config is empty', null, { tag: 'mayo-firebase-config-extractor' });
+      throw new Error('Failed to extract valid Firebase config or the config is empty');
     }
 
     // Be cautious about logging potentially sensitive information

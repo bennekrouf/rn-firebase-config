@@ -22,7 +22,8 @@ const extractFirebaseConfig = () => __awaiter(void 0, void 0, void 0, function* 
             mayo_logger_1.Logger.info('Successfully extracted Firebase config', null, { tag: 'mayo-firebase-config-extractor' });
         }
         else {
-            mayo_logger_1.Logger.warn('Failed to extract valid Firebase config or the config is empty', null, { tag: 'mayo-firebase-config-extractor' });
+            mayo_logger_1.Logger.error('Failed to extract valid Firebase config or the config is empty', null, { tag: 'mayo-firebase-config-extractor' });
+            throw new Error('Failed to extract valid Firebase config or the config is empty');
         }
         // Be cautious about logging potentially sensitive information
         mayo_logger_1.Logger.info('Extracted Firebase config:', { config }, { tag: 'mayo-firebase-config-extractor' });
