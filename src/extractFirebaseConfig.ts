@@ -8,7 +8,6 @@ console.log('MODULE MODULE MODULE MODULE :', Object.keys(FirebaseConfigExtractor
 export const extractFirebaseConfig = async (): Promise<FirebaseConfig> => {
   try {
     Logger.info('Starting1 Firebase config extraction...', null, { tag: 'mayo-firebase-config-extractor' });
-
     const config: FirebaseConfig = await FirebaseConfigExtractor.extractFirebaseConfig();
 
     if (config && typeof config === 'object' && Object.keys(config).length > 0) {

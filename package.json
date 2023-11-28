@@ -1,6 +1,6 @@
 {
   "name": "mayo-firebase-config",
-  "version": "1.2.20",
+  "version": "1.2.21",
   "license": "MIT",
   "author": "Mohamed Bennekrouf",
   "main": "dist/index.js",
