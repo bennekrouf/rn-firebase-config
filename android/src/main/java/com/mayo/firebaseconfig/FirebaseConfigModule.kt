@@ -14,7 +14,7 @@ class FirebaseConfigModule(reactContext: ReactApplicationContext) : ReactContext
     }
 
     @ReactMethod
-    fun extractConfig(promise: Promise) {
+    fun extractFirebaseConfig(promise: Promise) {
         try {
             val context: Context = reactApplicationContext
             val assetManager = context.assets

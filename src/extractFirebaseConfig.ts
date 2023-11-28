@@ -3,12 +3,13 @@ import { Logger } from 'mayo-logger';
 import { FirebaseConfig } from 'mayo-firebase-config';
 
 const { FirebaseConfigExtractor } = NativeModules;
+console.log('MODULE MODULE MODULE MODULE :', Object.keys(FirebaseConfigExtractor));
 
-export const extractConfig = async (): Promise<FirebaseConfig> => {
+export const extractFirebaseConfig = async (): Promise<FirebaseConfig> => {
   try {
-    Logger.info('Starting Firebase config extraction...', null, { tag: 'mayo-firebase-config-extractor' });
+    Logger.info('Starting1 Firebase config extraction...', null, { tag: 'mayo-firebase-config-extractor' });
 
-    const config: FirebaseConfig = await FirebaseConfigExtractor.extractConfig();
+    const config: FirebaseConfig = await FirebaseConfigExtractor.extractFirebaseConfig();
 
     if (config && typeof config === 'object' && Object.keys(config).length > 0) {
       Logger.info('Successfully extracted Firebase config', null, { tag: 'mayo-firebase-config-extractor' });
