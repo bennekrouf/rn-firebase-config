@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   
     s.homepage     = "https://github.com/bennekrouf/mayo-firebase-config"
   
-    s.license      = { :type => "MIT", :file => "LICENSE" }
+    s.license      = { :type => "MIT" }
   
     s.author             = { "bennekrouf" => "mb@mayorana.ch" }
     s.platform     = :ios, "9.0"
