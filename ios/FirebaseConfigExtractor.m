@@ -2,7 +2,7 @@
 
 @interface RCT_EXTERN_MODULE(FirebaseConfigExtractor, NSObject)
 
-RCT_EXTERN_METHOD(extractConfig: (RCTPromiseResolveBlock)resolver rejecter:(RCTPromiseRejectBlock)rejecter)
+RCT_EXTERN_METHOD(extractFirebaseConfig: (RCTPromiseResolveBlock)resolver rejecter:(RCTPromiseRejectBlock)rejecter)
 
 + (BOOL)requiresMainQueueSetup
 {

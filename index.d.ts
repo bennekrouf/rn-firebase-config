@@ -12,5 +12,5 @@ declare module 'mayo-firebase-config' {
     [key: string]: string | undefined;
   }
 
-  export function extractConfig(): Promise<FirebaseConfig>;
+  export function extractFirebaseConfig(): Promise<FirebaseConfig>;
 }

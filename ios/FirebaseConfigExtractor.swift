@@ -6,7 +6,7 @@
       return "FirebaseConfigExtractor"
     }
 
-    @objc func extractConfig(_ resolver: @escaping RCTPromiseResolveBlock, rejecter: @escaping RCTPromiseRejectBlock) {
+    @objc func extractFirebaseConfig(_ resolver: @escaping RCTPromiseResolveBlock, rejecter: @escaping RCTPromiseRejectBlock) {
       if let path = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist"),
         let plist = NSDictionary(contentsOfFile: path) as? [String: Any] {
         let config: [String: Any] = [

@@ -1,6 +1,6 @@
 {
   "name": "mayo-firebase-config",
-  "version": "1.2.17",
+  "version": "1.2.23",
   "license": "MIT",
   "author": "Mohamed Bennekrouf",
   "main": "dist/index.js",
@@ -15,7 +15,8 @@
     }
   },
   "dependencies": {
-    "mayo-logger": "^1.0.8"
+    "mayo-logger": "^1.0.8",
+    "react-native-device-info": "^10.12.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.27",
@@ -23,9 +24,9 @@
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
-    "react-native-device-info": "^10.11.0",
-    "react-native": "^0.60.0 || ^0.72.0 || ^1000.0.0",
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "react-native": ">=0.60.0",
+    "react-native-device-info": "^10.12.0"
   },
   "resolutions": {
     "react": "18.2.0"
